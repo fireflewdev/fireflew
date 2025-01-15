@@ -149,7 +149,7 @@ export default function Music() {
                     turnOffVideos();
                     turnOffAudio();
                     setPlayingSymbVideo(true);
-                }} url='/music/symbiosis-trailer.mp4' controls />
+                }} url='https://gdiac.cs.cornell.edu/temp/showcase/gallery/symbiosis/trailer.mp4' controls />
                 {/* </div> */}
                 <div style={{ paddingTop: padding }}>You can check out and download the game <a href="https://gdiac.cs.cornell.edu/temp/showcase/gallery/symbiosis/" target="_blank" rel="noreferrer">here</a>. (Windows/Mac)</div>
                 <div style={{ paddingTop: padding, paddingBottom: padding }}>
