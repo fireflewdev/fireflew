@@ -57,11 +57,11 @@ export default function ShowcasePage(props: { title: string, description: JSX.El
                 </span>
                 {sections.map(e =>
                     <div style={{ width: "100%", display: 'flex', flexDirection: 'column', }} key={`contents_${e.title}`}>
-                        <a href="#" className="App-monotext" onClick={() => scrollTo(e.title)} style={{ cursor: 'pointer', paddingTop: 5, fontWeight: 'bold', fontSize: 15 }}>
+                        <a href="#" className="App-monotext" onClick={() => scrollTo(e.title)} style={{ cursor: 'pointer', paddingTop: 5, fontWeight: 'bold', fontSize: 17 }}>
                             {e.title}
                         </a>
                         {e.items.map(sub =>
-                            <a href="#" onClick={() => scrollTo("sub" + sub.title)} style={{ cursor: 'pointer', paddingLeft: 10, fontSize: 12 }} className="App-monotext">
+                            <a href="#" onClick={() => scrollTo("sub" + sub.title)} style={{ cursor: 'pointer', paddingLeft: 10, fontSize: 15, textDecoration: 'none' }} className="App-monotext">
                                 {" - " + sub.title}
                             </a>
 

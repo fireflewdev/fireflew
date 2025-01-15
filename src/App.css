@@ -282,13 +282,13 @@
 }
 
 .App-tertiarytitle {
-  font-size: calc(15px + 0.7vmin);
+  font-size: calc(17px + 0.7vmin);
   font-weight: bold;
   white-space: nowrap;
 }
 
 .App-tertiarytitleoneline {
-  font-size: calc(15px + 0.7vmin);
+  font-size: calc(17px + 0.7vmin);
   font-weight: bold;
   display: -webkit-box;
   -webkit-box-orient: vertical;
