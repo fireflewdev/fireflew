@@ -9,13 +9,13 @@ export default function Home() {
         <div className="App-body-top">
             <Header text="fireflew.top" />
             <span>
-                Welcome! I keep this site updated with the latest things I've been working on.{"\n"}Click a category to get started:
+                Hey, I'm Gordi! Welcome to my site. I keep this place updated with the latest things I've been working on. It's still in development–apologies if things look a bit empty.{"\n\n"}Click a category to get started:
             </span>
             <div style={{ height: padding * 2 }}></div>
             <FFButton title="Music" onClick={() => router.navigate("/music")} />
-            <div style={{ height: padding * 2 }}></div>
+            <div style={{ height: padding * 4 }}></div>
             <span>
-                This site was written in React and hosted on Vercel.
+                This site is written in React and hosted on Vercel.
             </span>
         </div>
     )
