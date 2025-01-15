@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.53bf1609.css",
+    "main.js": "/static/js/main.6d547fcf.js",
+    "static/js/453.13d3ef33.chunk.js": "/static/js/453.13d3ef33.chunk.js",
+    "static/media/Tipzy_Full_Orange.png": "/static/media/Tipzy_Full_Orange.66c813b947908744c6da.png",
+    "service-worker.js": "/service-worker.js",
+    "index.html": "/index.html",
+    "main.53bf1609.css.map": "/static/css/main.53bf1609.css.map",
+    "main.6d547fcf.js.map": "/static/js/main.6d547fcf.js.map",
+    "453.13d3ef33.chunk.js.map": "/static/js/453.13d3ef33.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.53bf1609.css",
+    "static/js/main.6d547fcf.js"
+  ]
+}
