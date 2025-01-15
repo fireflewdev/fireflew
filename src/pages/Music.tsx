@@ -8,6 +8,7 @@ import ShowcasePage, { CustomShowcaseElementProps } from "../components/Showcase
 import AudioPlayer from 'react-h5-audio-player';
 import SoundCloudPlayer from "react-player/soundcloud";
 import './rhap.css';
+import { isMobile } from "react-device-detect";
 
 
 // import { useGlobalAudioPlayer } from 'react-use-audio-player';
@@ -154,6 +155,7 @@ export default function Music() {
                 <div style={{ paddingTop: padding, paddingBottom: padding }}>
                     Something cool that I did was create an adaptive music engine–in other words, the game's music is influenced by your actions. In the game, you can transform into and out of different animal forms, and the rhythm/bass kicks in when you're in a transformed state.{"\n\n"}Here's a little demo of it in action (or <a href="https://soundcloud.com/fireflewmusic/sets/symbiosis-ost" target="_blank" rel="noreferrer">listen to the full soundtrack</a>):
                 </div>
+
                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingBottom: padding }}>
                     <span>Area:</span>
                     <div style={{ width: padding }} />
@@ -165,11 +167,20 @@ export default function Music() {
                     <div style={{ width: padding }} />
                     <AreaButton title={"Storm"} area={3} />
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-around', }}>
-                    <TransformButton text="Base" selected={sym ? symVol < 0.5 : false} src={require('./symb/Aelyn_Idle.gif')} onClick={onBaseClick} />
-                    <div style={{ width: padding }} />
-                    <TransformButton text="Transformed" selected={sym && symVol ? symVol > 0.5 : false} src={require('./symb/Player_Frog_Jump.gif')} onClick={onTransformClick} />
-                </div>
+                {isMobile ?
+                    <div style={{ display: 'flex', flex: 1, flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+                        <div style={{ height: padding * 2 }}></div>
+                        <img alt="mobilenotallowed" src={require('./symb/Player_Frog_Jump.gif')} width={100} style={{ imageRendering: 'pixelated' }} />
+                        <div style={{ height: padding * 2 }}></div>
+                        <span style={{ width: "100%", textAlign: 'center' }}>Sorry! This demo is only available for desktop users.</span>
+                    </div>
+                    :
+                    <div style={{ display: 'flex', justifyContent: 'space-around', }}>
+                        <TransformButton text="Base" selected={sym ? symVol < 0.5 : false} src={require('./symb/Aelyn_Idle.gif')} onClick={onBaseClick} />
+                        <div style={{ width: padding }} />
+                        <TransformButton text="Transformed" selected={sym && symVol ? symVol > 0.5 : false} src={require('./symb/Player_Frog_Jump.gif')} onClick={onTransformClick} />
+                    </div>
+                }
 
                 <div style={{ height: projectHeight }} />
             </>
