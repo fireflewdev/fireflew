@@ -403,7 +403,7 @@ export default function Music() {
                             },
                             {
                                 title: `"The Grass is Greener"`,
-                                subtitle: "An experiment with convolution reverb",
+                                subtitle: "Ambient experiment with convolution reverb",
                                 description: `Convolution reverb normally aims to emulate real spaces by using an impulse response (a "click" sound reverberating in a space). When audio sample plays through this effect, it basically plays the impulse response, but filtered so that the frequencies that play match the frequencies of the original signal. The end result sounds like the original sound but played in the room the impulse response was gathered from.
                                 
                                 The catch is, impulse responses are just audio files–they can be of anything! For this song, I set an entire 3-minute long instrumental piece to be the impulse response. When playing a few short notes at varying times from a synthesizer into this reverb, the processed frequencies mix really nicely together to form ambient-like music.`,
