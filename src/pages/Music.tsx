@@ -334,7 +334,7 @@ export default function Music() {
                 title="Music"
                 description={
                     <span>
-                        Here's a selection of some of the music-related projects I've made!{"\n"}{"\n"}This includes my songs (however, most of these aren't released yet; you can check out what I've published <a target="_blank" rel="noreferrer" href={"https://push.fm/fl/fireflew"}>here</a>), and anything else related to music. I've tried to select works that showcase the extent of my abilities.{"\n"}{"\n"}There's a lot of information on this page–I dive in pretty deep on for some of my projects–if you prefer skipping around, use the <b>Contents</b> menu to jump to your desired location.{"\n"}{"\n"}All music here is performed, mixed, and mastered by me.
+                        Here's a selection of some of the music-related projects I've made!{"\n"}{"\n"}This includes my songs (however, most of these aren't released yet; you can check out what I've published <a target="_blank" rel="noreferrer" href={"https://push.fm/fl/fireflew"}>here</a>), and anything else related to music. I've tried to select works that showcase the extent of my abilities.{"\n"}{"\n"}There's a lot of information on this page–I dive in pretty deep on for some of my projects–if you prefer skipping around, use the <b>Contents</b> menu to jump to your desired location.{"\n"}{"\n"}All music here is performed, mixed, and mastered by me (unless otherwise specified).
                     </span>
                 }
                 sections={[
