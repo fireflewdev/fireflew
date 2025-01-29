@@ -12,6 +12,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import Home from './pages/Home';
 import { NotFoundPage } from './pages/NotFoundPage';
 import Music from './pages/Music';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const router = createBrowserRouter([{
   // element: <Layout/>,
@@ -37,6 +38,7 @@ function App() {
           router={router} />
         {/* </div> */}
       </DndProvider>
+      <SpeedInsights />
     </div>
   )
 }
