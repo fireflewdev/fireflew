@@ -7,10 +7,12 @@ import { padding } from "../lib/Constants";
 export default function Home() {
     return (
         <div className="App-body-top">
-            <Header text="fireflew.top" />
+            <Header text="gordi.me" />
             <span>
-                Hey, I'm Gordi! Welcome to my site. I keep this place updated with the latest things I've been working on. It's still in development–apologies if things look a bit empty.{"\n\n"}Click a category to get started:
+                Hey, it's me, Gordi! Welcome to my site. I keep this place updated with the latest things I've been working on. It's still in development–apologies if things look a bit empty.{"\n\n"}Click a category to get started:
             </span>
+            <div style={{ height: padding * 2 }}></div>
+            <FFButton title="Portfolio" onClick={() => router.navigate("/portfolio")} />
             <div style={{ height: padding * 2 }}></div>
             <FFButton title="Music" onClick={() => router.navigate("/music")} />
             <div style={{ height: padding * 4 }}></div>

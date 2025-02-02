@@ -12,7 +12,7 @@ import { HTML5Backend } from 'react-dnd-html5-backend';
 import Home from './pages/Home';
 import { NotFoundPage } from './pages/NotFoundPage';
 import Music from './pages/Music';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import Portfolio from './pages/Portfolio';
 
 export const router = createBrowserRouter([{
   // element: <Layout/>,
@@ -24,6 +24,10 @@ export const router = createBrowserRouter([{
     {
       path: "/music",
       Component: Music
+    },
+    {
+      path: "/portfolio",
+      Component: Portfolio
     }
     ], errorElement: <NotFoundPage title="Oops!" body={"Hmm...can't find that page."} backPath={"/"} />
 }
@@ -38,7 +42,6 @@ function App() {
           router={router} />
         {/* </div> */}
       </DndProvider>
-      <SpeedInsights />
     </div>
   )
 }
