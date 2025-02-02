@@ -19,6 +19,12 @@ export default function Home() {
             <span>
                 This site is written in React and hosted on Vercel.
             </span>
+            <div style={{ height: padding * 4 }}></div>
+            <div style={{ display: 'flex' }}>
+                <a href="https://www.linkedin.com/in/gtenev/" target="_blank" rel="noreferrer">LinkedIn</a>
+                <div style={{ paddingLeft: padding }}></div>
+                <a href="https://github.com/fireflewdev" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
         </div>
     )
 }
